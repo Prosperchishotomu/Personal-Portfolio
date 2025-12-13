@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
@@ -186,6 +186,7 @@ nav .container {
     color: #667eea;
     font-size: 1.3rem;
     font-weight: 600;
+    font-family: 'Playfair Display', serif;
 }
 
 .skill-category ul {
@@ -234,6 +235,7 @@ nav .container {
     color: #667eea;
     font-size: 1.3rem;
     font-weight: 600;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Projects */
@@ -262,6 +264,7 @@ nav .container {
     color: #667eea;
     font-size: 1.3rem;
     font-weight: 600;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Contact */
@@ -296,6 +299,7 @@ nav .container {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     font-weight: 600;
+    font-family: 'Playfair Display', serif;
 }
 
 .contact-card p {
