@@ -133,7 +133,7 @@ nav .container {
 
 /* Sections */
 .section {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .section:nth-child(even) {
@@ -143,7 +143,7 @@ nav .container {
 .section h2 {
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #2c3e50;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -169,7 +169,7 @@ nav .container {
 
 .skill-category {
     background: #fff;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -184,7 +184,7 @@ nav .container {
 .skill-category h3 {
     margin-bottom: 1.5rem;
     color: #667eea;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
 }
@@ -218,7 +218,7 @@ nav .container {
 
 .certification {
     background: #fff;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -233,7 +233,7 @@ nav .container {
 .certification h3 {
     margin-bottom: 1rem;
     color: #667eea;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
 }
@@ -247,7 +247,7 @@ nav .container {
 
 .project {
     background: #fff;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -262,7 +262,7 @@ nav .container {
 .project h3 {
     margin-bottom: 1rem;
     color: #667eea;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
 }
@@ -277,7 +277,7 @@ nav .container {
 
 .contact-card {
     background: #fff;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
@@ -290,14 +290,14 @@ nav .container {
 }
 
 .contact-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
 .contact-card h3 {
     color: #667eea;
     margin-bottom: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
 }
