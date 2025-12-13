@@ -173,6 +173,7 @@ nav .container {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .skill-category:hover {
@@ -189,6 +190,8 @@ nav .container {
 
 .skill-category ul {
     list-style: none;
+    text-align: left;
+    display: inline-block;
 }
 
 .skill-category li {
@@ -246,6 +249,7 @@ nav .container {
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .project:hover {
