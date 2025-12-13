@@ -9,7 +9,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
 }
 
 .container {
@@ -134,10 +135,14 @@ nav .container {
 /* Sections */
 .section {
     padding: 4rem 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .section:nth-child(even) {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .section h2 {
