@@ -5,7 +5,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             target.scrollIntoView({
-                behavior: 'smooth'
+                behavior: 'smooth',
+                block: 'start'
             });
         }
     });
@@ -17,10 +18,12 @@ const revealElements = () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+                observer.unobserve(entry.target);
             }
         });
     }, {
-        threshold: 0.1
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
     });
 
     document.querySelectorAll('.reveal').forEach(element => {
@@ -28,19 +31,42 @@ const revealElements = () => {
     });
 };
 
+// Enhanced Header scroll effect
+const updateHeaderOnScroll = () => {
+    const header = document.querySelector('header');
+    const scrolled = window.scrollY > 50;
+    
+    if (scrolled) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+};
+
+// Parallax effect for hero section
+const parallaxEffect = () => {
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        const scrolled = window.scrollY;
+        hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
+    }
+};
+
 document.addEventListener('DOMContentLoaded', function() {
     revealElements();
-    console.log('Portfolio website enhanced with modern design and animations!');
+    updateHeaderOnScroll();
+    console.log('Portfolio modernized with enhanced animations and interactions!');
 });
 
-// Header scroll effect
+// Scroll events
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-        header.style.padding = '0.5rem 0';
-        header.style.background = 'rgba(15, 12, 41, 0.95)';
-    } else {
-        header.style.padding = '1rem 0';
-        header.style.background = 'rgba(15, 12, 41, 0.8)';
-    }
+    updateHeaderOnScroll();
+    parallaxEffect();
+}, { passive: true });
+
+// Smooth animations on hover for cards
+document.querySelectorAll('.skill-category, .certification, .project, .contact-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+    });
 });
