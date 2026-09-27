@@ -3,224 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chishotomu Prosper T | Data Scientist & ML Engineer</title>
-    <meta name="description" content="Portfolio of Chishotomu Prosper T - Specialist in Data Science, Machine Learning Engineering, IT Support, and Software Development.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Prosper Chishotomu | Data Scientist & ML Engineer</title>
+    <meta name="description" content="Portfolio of Prosper Chishotomu — Data Scientist, ML Engineer, IT Specialist & Software Developer based in Zimbabwe.">
+    <meta property="og:title" content="Prosper Chishotomu | Data Scientist & ML Engineer">
+    <meta property="og:description" content="Versatile tech professional with expertise in Data Science, Machine Learning, Cloud & Software Development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+
+    <!-- ===== NAVBAR ===== -->
+    <header id="navbar">
         <nav>
-            <div class="container">
-                <h1 class="logo">Chishotomu Prosper T</h1>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <div class="container nav-inner">
+                <a href="#hero" class="nav-logo">P<span class="dot">.</span>C</a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certs</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </nav>
     </header>
 
-    <section id="about" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Chishotomu Prosper T</h1>
-                    <h2>Data Scientist | ML Engineer | IT Specialist | Software Developer | Consultant</h2>
-                    <p>I am a versatile professional with a degree in Data Science and Informatics, expertise in data science, machine learning engineering, IT support, software development, and consulting. As a solution-oriented individual, I bring a unique blend of technical skills and strategic thinking to solve complex problems and deliver impactful results.</p>
-                    <a href="#contact" class="cta-button">Get In Touch</a>
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb orb-1"></div>
+            <div class="hero-orb orb-2"></div>
+            <div class="hero-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-text" data-reveal>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
                 </div>
-                <div class="hero-image">
-                    <img src="profile-photo.jpg" alt="Chishotomu Prosper T" class="profile-photo">
+                <h1 class="hero-title">
+                    Prosper<br><span class="title-accent">Chishotomu</span>
+                </h1>
+                <div class="hero-roles">
+                    <span class="role-static">I am a </span>
+                    <span class="role-dynamic" id="typed-role"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-bio">
+                    Versatile tech professional with a degree in Data Science &amp; Informatics. I turn complex data into actionable intelligence, build scalable ML systems, and engineer robust software solutions.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">15+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">10+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-reveal data-delay="200">
+                <div class="photo-frame">
+                    <img src="profile-photo.jpg" alt="Prosper Chishotomu" class="profile-photo">
+                    <div class="photo-ring"></div>
+                    <div class="photo-badge photo-badge-1">
+                        <i class="fas fa-brain"></i> ML Engineer
+                    </div>
+                    <div class="photo-badge photo-badge-2">
+                        <i class="fas fa-chart-line"></i> Data Scientist
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint">
+            <span>Scroll down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-label">Who I am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text" data-reveal>
+                    <p>
+                        I'm <strong>Prosper Chishotomu</strong>, a solution-oriented data professional blending analytical rigour with engineering precision. 
+                        With hands-on experience in machine learning, network engineering, and enterprise software, I bridge the gap between raw data and real-world impact.
+                    </p>
+                    <p>
+                        From designing network infrastructure at <strong>Avenues Clinic</strong> to building fraud-detection ML systems and interactive Power BI dashboards — I've consistently delivered measurable results for organisations across Zimbabwe.
+                    </p>
+                    <a href="mailto:chishotomup@gmail.com" class="btn btn-outline">Download CV <i class="fas fa-download"></i></a>
+                </div>
+                <div class="about-cards" data-reveal data-delay="150">
+                    <div class="info-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Education</h4>
+                            <p>BSc Data Science &amp; Informatics</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Harare, Zimbabwe</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h4>Experience</h4>
+                            <p>Network Engineer · Avenues Clinic (2022–2025)</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-language"></i>
+                        <div>
+                            <h4>Specialisations</h4>
+                            <p>ML · Data Engineering · Cloud · DevOps</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section reveal">
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section section-dark">
         <div class="container">
-            <h2>Skills</h2>
+            <div class="section-header" data-reveal>
+                <span class="section-label">What I do</span>
+                <h2 class="section-title">Skills &amp; Expertise</h2>
+            </div>
             <div class="skills-grid">
-                <div class="skill-category reveal">
-                    <h3>Data Science & ML</h3>
-                    <ul>
-                        <li>Python, R</li>
-                        <li>TensorFlow, PyTorch</li>
-                        <li>Pandas, NumPy, Scikit-learn</li>
-                        <li>Data Visualization (Matplotlib, Seaborn, Plotly)</li>
-                        <li>Statistical Analysis</li>
-                        <li>Power BI, LOOKER, Tableau</li>
-                        <li>Big Data Technologies (Hadoop, Spark)</li>
-                        <li>Natural Language Processing (NLP)</li>
-                        <li>Computer Vision</li>
-                        <li>Cybersecurity (Kali Linux)/<>
-                        <li>MLOps & Model Deployment</li>
-                    </ul>
+
+                <div class="skill-card" data-reveal>
+                    <div class="skill-icon-wrap"><i class="fas fa-robot"></i></div>
+                    <h3>Data Science &amp; ML</h3>
+                    <div class="tag-group">
+                        <span class="tag">Python</span><span class="tag">R</span>
+                        <span class="tag">TensorFlow</span><span class="tag">PyTorch</span>
+                        <span class="tag">Scikit-learn</span><span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span><span class="tag">NLP</span>
+                        <span class="tag">Computer Vision</span><span class="tag">MLOps</span>
+                    </div>
                 </div>
-                <div class="skill-category reveal">
-                    <h3>IT & Software Development</h3>
-                    <ul>
-                        <li>Network Administration</li>
-                        <li>System Administration</li>
-                        <li>Web Development (HTML, CSS, JavaScript)</li>
-                        <li>Database Management (SQL, NoSQL)</li>
-                        <li>Cloud Computing (AWS, Azure, GCP, Oracle)</li>
-                        <li>Containerization (Docker, Kubernetes)</li>
-                        <li>DevOps & CI/CD</li>
-                        <li>Version Control (Git)</li>
-                        <li>API Development (REST, GraphQL)</li>
-                    </ul>
+
+                <div class="skill-card" data-reveal data-delay="100">
+                    <div class="skill-icon-wrap"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Analytics &amp; BI</h3>
+                    <div class="tag-group">
+                        <span class="tag">Power BI</span><span class="tag">Tableau</span>
+                        <span class="tag">Looker</span><span class="tag">Matplotlib</span>
+                        <span class="tag">Seaborn</span><span class="tag">Plotly</span>
+                        <span class="tag">Statistical Analysis</span>
+                        <span class="tag">Big Data (Hadoop/Spark)</span>
+                    </div>
                 </div>
-                <div class="skill-category reveal">
-                    <h3>Consulting</h3>
-                    <ul>
-                        <li>Technical Consulting</li>
-                        <li>Project Management</li>
-                        <li>Requirements Analysis</li>
-                        <li>Stakeholder Communication</li>
-                        <li>Agile & Scrum Methodologies</li>
-                        <li>Business Analysis</li>
-                        <li>Change Management</li>
-                    </ul>
+
+                <div class="skill-card" data-reveal data-delay="200">
+                    <div class="skill-icon-wrap"><i class="fas fa-code"></i></div>
+                    <h3>Software Development</h3>
+                    <div class="tag-group">
+                        <span class="tag">Django</span><span class="tag">REST APIs</span>
+                        <span class="tag">GraphQL</span><span class="tag">HTML/CSS/JS</span>
+                        <span class="tag">SQL</span><span class="tag">NoSQL</span>
+                        <span class="tag">Git</span>
+                    </div>
                 </div>
-                <div class="skill-category reveal">
-                    <h3>Emerging Technologies & Soft Skills</h3>
-                    <ul>
-                        <li>AI Ethics & Responsible AI</li>
-                        <li>Blockchain Technology</li>
-                        <li>Internet of Things (IoT)</li>
-                        <li>Leadership & Team Management</li>
-                        <li>Public Speaking & Presentation</li>
-                        <li>Problem-Solving & Critical Thinking</li>
-                    </ul>
+
+                <div class="skill-card" data-reveal data-delay="100">
+                    <div class="skill-icon-wrap"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud &amp; DevOps</h3>
+                    <div class="tag-group">
+                        <span class="tag">AWS</span><span class="tag">Azure</span>
+                        <span class="tag">GCP</span><span class="tag">Oracle Cloud</span>
+                        <span class="tag">Docker</span><span class="tag">Kubernetes</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
                 </div>
+
+                <div class="skill-card" data-reveal data-delay="200">
+                    <div class="skill-icon-wrap"><i class="fas fa-network-wired"></i></div>
+                    <h3>IT &amp; Networking</h3>
+                    <div class="tag-group">
+                        <span class="tag">Network Admin</span>
+                        <span class="tag">System Admin</span>
+                        <span class="tag">Cybersecurity</span>
+                        <span class="tag">Kali Linux</span>
+                        <span class="tag">SSIS / ETL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-reveal data-delay="300">
+                    <div class="skill-icon-wrap"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Strategy &amp; Consulting</h3>
+                    <div class="tag-group">
+                        <span class="tag">Project Management</span>
+                        <span class="tag">Agile / Scrum</span>
+                        <span class="tag">Business Analysis</span>
+                        <span class="tag">AI Ethics</span>
+                        <span class="tag">Stakeholder Comms</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="section reveal">
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section id="certifications" class="section">
         <div class="container">
-            <h2>Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification reveal">
-                    <h3>Cisco Certifications</h3>
-                    <p>3 Cisco Professional Certifications</p>
-                    <ul>
-                        <li>CCNA (Cisco Certified Network Associate)</li>
-                        <li>CCNP (Cisco Certified Network Professional)</li>
-                        <li>CCIE (Cisco Certified Internetwork Expert)</li>
-                    </ul>
+            <div class="section-header" data-reveal>
+                <span class="section-label">Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            <div class="certs-grid">
+
+                <div class="cert-card" data-reveal>
+                    <div class="cert-logo cisco"><i class="fas fa-network-wired"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Cisco</span>
+                        <h3>3 Professional Certifications</h3>
+                        <ul class="cert-list">
+                            <li>CCNA — Network Associate</li>
+                            <li>CCNP — Network Professional</li>
+                            <li>CCIE — Internetwork Expert</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="certification reveal">
-                    <h3>Oracle Certifications</h3>
-                    <p>Oracle Professional Data Science Certificate</p>
-                    <p>Certified in Oracle's data science methodologies and tools.</p>
+
+                <div class="cert-card" data-reveal data-delay="100">
+                    <div class="cert-logo oracle"><i class="fas fa-database"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Oracle</span>
+                        <h3>Oracle Data Science Certificate</h3>
+                        <p>Certified in Oracle's professional data science methodologies and tools.</p>
+                    </div>
                 </div>
-                <div class="certification reveal">
-                    <h3>OCI Certifications</h3>
-                    <ul>
-                        <li>OCI Generative AI Certificate</li>
-                        <li>OCI Database Certificate</li>
-                    </ul>
-                    <p>Certified in Oracle Cloud Infrastructure services.</p>
+
+                <div class="cert-card" data-reveal data-delay="150">
+                    <div class="cert-logo oci"><i class="fas fa-cloud"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Oracle Cloud (OCI)</span>
+                        <h3>2 OCI Certifications</h3>
+                        <ul class="cert-list">
+                            <li>OCI Generative AI Certificate</li>
+                            <li>OCI Database Certificate</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="certification reveal">
-                    <h3>DataCamp Certifications</h3>
-                    <p>15+ Data Science and Informatics Certificates</p>
-                    <p>Comprehensive training in data science, machine learning, and informatics through DataCamp's platform.</p>
+
+                <div class="cert-card" data-reveal data-delay="200">
+                    <div class="cert-logo datacamp"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">DataCamp</span>
+                        <h3>15+ Data Science Certificates</h3>
+                        <p>Comprehensive training covering data science, machine learning, and informatics.</p>
+                    </div>
                 </div>
-                <div class="certification reveal">
-                    <h3>Education</h3>
-                    <p>Degree in Data Science and Informatics</p>
-                    <p>Academic foundation in data science principles and informatics.</p>
+
+                <div class="cert-card" data-reveal data-delay="250">
+                    <div class="cert-logo edu"><i class="fas fa-university"></i></div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">University</span>
+                        <h3>BSc Data Science &amp; Informatics</h3>
+                        <p>Academic foundation in data science principles, statistics, and informatics.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section reveal">
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section section-dark">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="section-header" data-reveal>
+                <span class="section-label">What I've built</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
             <div class="projects-grid">
-                <div class="project reveal">
-                    <h3>PowerBI Dashboards</h3>
-                    <p>Developed multiple interactive dashboards using PowerBI for various organizations, enabling data-driven decision making and real-time insights.</p>
+
+                <div class="project-card featured" data-reveal>
+                    <div class="project-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="project-meta">
+                        <span class="project-type">Business Intelligence</span>
+                        <h3>PowerBI Dashboards</h3>
+                        <p>Developed multiple interactive dashboards for various organisations, enabling real-time data-driven decision making and executive reporting.</p>
+                        <div class="tag-group">
+                            <span class="tag tag-sm">Power BI</span>
+                            <span class="tag tag-sm">DAX</span>
+                            <span class="tag tag-sm">SQL</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project reveal">
-                    <h3>ETL Pipelines with SSIS</h3>
-                    <p>Designed and implemented robust ETL (Extract, Transform, Load) pipelines using SQL Server Integration Services (SSIS) for efficient data processing and integration.</p>
+
+                <div class="project-card" data-reveal data-delay="100">
+                    <div class="project-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <div class="project-meta">
+                        <span class="project-type">Data Engineering</span>
+                        <h3>ETL Pipelines (SSIS)</h3>
+                        <p>Designed robust ETL pipelines using SQL Server Integration Services for efficient data processing and integration across enterprise systems.</p>
+                        <div class="tag-group">
+                            <span class="tag tag-sm">SSIS</span>
+                            <span class="tag tag-sm">SQL Server</span>
+                            <span class="tag tag-sm">ETL</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project reveal">
-                    <h3>Django Web Applications</h3>
-                    <p>Built numerous web applications using Django framework, including Network Intrusion Detection System (NIDS), fraud detection systems, and remote health monitoring systems.</p>
+
+                <div class="project-card" data-reveal data-delay="150">
+                    <div class="project-icon"><i class="fas fa-globe"></i></div>
+                    <div class="project-meta">
+                        <span class="project-type">Web Development</span>
+                        <h3>Django Web Applications</h3>
+                        <p>Built NIDS (Network Intrusion Detection), fraud detection systems, and remote health monitoring platforms using the Django framework.</p>
+                        <div class="tag-group">
+                            <span class="tag tag-sm">Django</span>
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">REST API</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project reveal">
-                    <h3>Network Engineering at Avenues Clinic</h3>
-                    <p>Served as Network Engineer at Avenues Clinic from 2022-2025, designing and maintaining network infrastructure, ensuring high availability and security.</p>
+
+                <div class="project-card" data-reveal data-delay="200">
+                    <div class="project-icon"><i class="fas fa-hospital"></i></div>
+                    <div class="project-meta">
+                        <span class="project-type">Network Engineering</span>
+                        <h3>Avenues Clinic Network</h3>
+                        <p>Served as Network Engineer (2022–2025), designing and maintaining critical healthcare network infrastructure with high availability and security.</p>
+                        <div class="tag-group">
+                            <span class="tag tag-sm">Cisco</span>
+                            <span class="tag tag-sm">Network Design</span>
+                            <span class="tag tag-sm">Security</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project reveal">
-                    <h3>Machine Learning Models</h3>
-                    <p>Developed and deployed various machine learning models for predictive analytics, classification, and recommendation systems across different domains.</p>
+
+                <div class="project-card" data-reveal data-delay="250">
+                    <div class="project-icon"><i class="fas fa-brain"></i></div>
+                    <div class="project-meta">
+                        <span class="project-type">Machine Learning</span>
+                        <h3>ML Models &amp; Deployment</h3>
+                        <p>Developed and deployed predictive analytics, classification, and recommendation ML models across healthcare, finance, and security domains.</p>
+                        <div class="tag-group">
+                            <span class="tag tag-sm">TensorFlow</span>
+                            <span class="tag tag-sm">Scikit-learn</span>
+                            <span class="tag tag-sm">MLOps</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project reveal">
-                    <h3>IT Support and Infrastructure</h3>
-                    <p>Provided comprehensive IT support services, including system administration, troubleshooting, and infrastructure optimization for multiple clients.</p>
+
+                <div class="project-card" data-reveal data-delay="300">
+                    <div class="project-icon"><i class="fas fa-headset"></i></div>
+                    <div class="project-meta">
+                        <span class="project-type">IT Services</span>
+                        <h3>IT Support &amp; Infrastructure</h3>
+                        <p>Delivered comprehensive IT support including system administration, troubleshooting, and infrastructure optimisation for multiple enterprise clients.</p>
+                        <div class="tag-group">
+                            <span class="tag tag-sm">SysAdmin</span>
+                            <span class="tag tag-sm">Cloud</span>
+                            <span class="tag tag-sm">DevOps</span>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section reveal">
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
         <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-grid">
-                <div class="contact-card reveal">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h3>Email</h3>
-                        <p><a href="mailto:chishotomup@gmail.com">chishotomup@gmail.com</a></p>
-                    </div>
+            <div class="section-header" data-reveal>
+                <span class="section-label">Let's talk</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-intro" data-reveal>
+                    <p>Whether you have a project in mind, a role to fill, or just want to connect — I'm always open to new conversations. Let's build something impactful together.</p>
+                    <a href="mailto:chishotomup@gmail.com" class="btn btn-primary contact-email-btn">
+                        <i class="fas fa-paper-plane"></i> Send me an Email
+                    </a>
                 </div>
-                <div class="contact-card reveal">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h3>LinkedIn</h3>
-                        <p><a href="https://linkedin.com/in/chishotomup@gmail.com" target="_blank">chishotomu-prosper</a></p>
-                    </div>
-                </div>
-                <div class="contact-card reveal">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h3>GitHub</h3>
-                        <p><a href="https://github.com/Prosperchishotomu" target="_blank">Prosperchishotomu</a></p>
-                    </div>
-                </div>
-                <div class="contact-card reveal">
-                    <div class="contact-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <div class="contact-info">
-                        <h3>Phone</h3>
-                        <p><a href="https://wa.me/263775876012" target="_blank">+263 775 876 012</a></p>
-                    </div>
+                <div class="contact-links" data-reveal data-delay="150">
+                    <a href="mailto:chishotomup@gmail.com" class="contact-link" id="contact-email">
+                        <div class="cl-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="cl-text">
+                            <span class="cl-label">Email</span>
+                            <span class="cl-value">chishotomup@gmail.com</span>
+                        </div>
+                        <i class="fas fa-arrow-right cl-arrow"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/chishotomu-prosper" target="_blank" rel="noopener" class="contact-link" id="contact-linkedin">
+                        <div class="cl-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="cl-text">
+                            <span class="cl-label">LinkedIn</span>
+                            <span class="cl-value">chishotomu-prosper</span>
+                        </div>
+                        <i class="fas fa-arrow-right cl-arrow"></i>
+                    </a>
+                    <a href="https://github.com/Prosperchishotomu" target="_blank" rel="noopener" class="contact-link" id="contact-github">
+                        <div class="cl-icon"><i class="fab fa-github"></i></div>
+                        <div class="cl-text">
+                            <span class="cl-label">GitHub</span>
+                            <span class="cl-value">Prosperchishotomu</span>
+                        </div>
+                        <i class="fas fa-arrow-right cl-arrow"></i>
+                    </a>
+                    <a href="https://wa.me/263775876012" target="_blank" rel="noopener" class="contact-link" id="contact-whatsapp">
+                        <div class="cl-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="cl-text">
+                            <span class="cl-label">WhatsApp</span>
+                            <span class="cl-value">+263 775 876 012</span>
+                        </div>
+                        <i class="fas fa-arrow-right cl-arrow"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Chishotomu Prosper T. All rights reserved.</p>
+        <div class="container footer-inner">
+            <span class="footer-logo">P<span class="dot">.</span>C</span>
+            <p>© 2026 Prosper Chishotomu. Designed &amp; built with care.</p>
+            <div class="footer-socials">
+                <a href="mailto:chishotomup@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Prosperchishotomu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/chishotomu-prosper" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </footer>
 
